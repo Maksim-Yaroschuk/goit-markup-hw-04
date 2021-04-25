@@ -16,6 +16,8 @@
   --header-border-col: #ececec;
   --portcard-border-col: #eeeeee;
 
+  --svg-col: #afb1b8;
+
   --margin-card: 30px;
 }
 
@@ -139,8 +141,24 @@ img {
   color: var(--main-text-col);
 }
 
+.contact-icon {
+  max-height: 16px;
+  max-width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-link {
+  display: flex;
+  align-items: flex-end;
+}
+
 .hero {
-  background-color: var(--bg-footer);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%),
+    url(../images/bg-hero.jpg) no-repeat center #c4c4c4;
   text-align: center;
 }
 
@@ -186,12 +204,25 @@ img {
   padding-top: 94px;
 }
 
+.qua-svg-block {
+  display: flex;
+  padding: 25px 0;
+  justify-content: center;
+  background-color: var(--bg-second);
+}
+
+.qua-svg {
+  width: 70px;
+  height: 70px;
+}
+
 .qua-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-col);
+  margin-top: 30px;
 }
 
 .content-card {
@@ -214,6 +245,38 @@ img {
   padding-bottom: 50px;
 }
 
+.social-icons {
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 0 32px;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--logo-light-col);
+  fill: var(--svg-col);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-col);
+  fill: var(--logo-light-col);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+}
+
 .port-card-flex {
   flex-basis: calc(100% / 3 - var(--margin-card));
   margin-top: var(--margin-card);
@@ -228,6 +291,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
   background-color: var(--logo-light-col);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -242,6 +308,40 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.clients {
+  display: inline-flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 93px;
+  border: 1px solid var(--svg-col);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-col);
+}
+
+.clients-svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--svg-col);
+}
+
+.clients-svg:hover,
+.clients-svg:focus {
+  fill: var(--accent-col);
 }
 
 .footer {
@@ -262,6 +362,34 @@ img {
 .footer-contacts {
   color: var(--footer-text-col);
   margin-top: 9px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-blocks:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-blocks .social-icons {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer-blocks .social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--logo-light-col);
+}
+
+.footer-blocks .social-icons-link:hover,
+.footer-blocks .social-icons-link:focus {
+  background: var(--accent-col);
+}
+
+.footer .qua-title {
+  color: var(--logo-light-col);
+  margin-top: 12px;
 }
 
 /* Стилі для сторінки портфоліо */
@@ -303,6 +431,13 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .port-name {

@@ -40,12 +40,20 @@
         <!-- Контактна інофрмація -->
         <ul class="list contact-info navi">
           <li class="navi-item">
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="link contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="navi-item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link contact-link" href="tel:+380961111111">
+              <svg class="contact-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -205,18 +213,77 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html" lang="en"
-          ><span class="logo-second">Web</span>Studio</a
-        >
-        <address class="footer-address">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <ul class="list">
-          <li class="footer-contacts">
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
+        <ul class="list footer-flex">
+          <li class="footer-blocks">
+            <a class="logo" href="./index.html" lang="en"
+              ><span class="logo-second">Web</span>Studio</a
+            >
+            <address class="footer-address">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <ul class="list">
+              <li class="footer-contacts">
+                <a class="link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts">
+                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
           </li>
-          <li class="footer-contacts">
-            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+          <li class="footer-blocks">
+            <p class="qua-title">Присоединяйтесь</p>
+            <ul class="social-icons list">
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
