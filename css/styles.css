@@ -142,8 +142,6 @@ img {
 }
 
 .contact-icon {
-  max-height: 16px;
-  max-width: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -211,11 +209,6 @@ img {
   background-color: var(--bg-second);
 }
 
-.qua-svg {
-  width: 70px;
-  height: 70px;
-}
-
 .qua-title {
   font-weight: 700;
   font-size: 14px;
@@ -270,11 +263,6 @@ img {
 .social-icons-link:focus {
   background-color: var(--accent-col);
   fill: var(--logo-light-col);
-}
-
-.social-icons-svg {
-  width: 20px;
-  height: 20px;
 }
 
 .port-card-flex {
@@ -334,8 +322,6 @@ img {
 }
 
 .clients-svg {
-  width: 106px;
-  height: 60px;
   fill: var(--svg-col);
 }
 
